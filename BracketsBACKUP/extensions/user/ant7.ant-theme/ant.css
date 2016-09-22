@@ -1,0 +1,215 @@
+/**
+ * Ant Brackets Theme
+ * https://github.com/ant7/ant-brackets-theme
+ *
+ * Dark color theme meant to be easy on the eyes
+ * 
+ * Author: Antonia Ciocodeica <ant@studio78.ro> (http://www.behance.net/ant7)
+ * Licence: MIT 
+ */
+
+.CodeMirror,
+.CodeMirror-scroll {
+    color: #f0e9c7;
+    line-height: 1.6;
+    background-color: #150C0B;
+}
+    /* TODO: style the inline widget a little bit more */
+    .inline-widget .CodeMirror {
+        background-color: #080404!important;
+    }
+
+
+.CodeMirror-activeline-background {
+    color: inherit;
+    background-color: #271614;
+}
+
+.CodeMirror-cursor {
+    border-color: #F7F3D2!important;
+}
+
+/* Matching highlight */
+.cm-matchhighlight {
+    background: rgba(62, 29, 25, 0.75);
+    border-bottom: 1px dotted;
+}
+
+.CodeMirror-selected {
+    background: #5D1D15;
+}
+
+
+/* Gutters */
+.CodeMirror-gutters {
+    background: #0f0706;
+}
+    .inline-widget .CodeMirror-gutters {
+        background-color: #0a0505;
+    }
+
+/* Active line gutter */
+.CodeMirror-activeline > div,
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    height: 100%;
+}
+    .CodeMirror-activeline .CodeMirror-gutter-elt {
+        color: #76554B;
+        background-color: #1F1110;
+    }
+
+/* Linenumbers */
+.CodeMirror-linenumber {
+    color: #563D36;
+}
+    .inline-widget .CodeMirror-linenumbers {
+        background: none!important;
+    }
+
+/* Searching */
+.CodeMirror-searching {
+    color: #5D1D15!important;
+    background: #fda832;
+}
+    .CodeMirror-searching.searching-current-match {
+        background-color: #FFFF26;
+    }
+
+/* Quick view highlight */
+.quick-view-highlight {
+    color: inherit!important;
+    background: #5D1D15;
+}
+
+/* Code fold marker */
+.CodeMirror-foldmarker {
+    color: #150C0B;
+    background-color: #D9AC71;
+    border: none;
+}
+
+.CodeMirror-foldgutter-open:after, 
+.CodeMirror-foldgutter-folded:after {
+    color: #2a1713;
+}
+    .CodeMirror-activeline .CodeMirror-foldgutter-open:after, 
+    .CodeMirror-activeline .CodeMirror-foldgutter-folded:after {
+        color: #76554B;
+    }
+
+
+/* Code */
+.CodeMirror-code pre {
+    padding: 0 1em;
+}
+
+.cm-comment { 
+    color: #9C7D72;
+}
+
+.cm-string {
+    color: #cbcb78;
+}
+
+/* eg: regular expression */
+.cm-string-2 {
+    color: #a1ad65;
+    border-bottom: 1px dotted;
+}
+
+.cm-meta {
+    color: #E47A56;
+    border-bottom: 1px dotted rgba(228, 122, 86, 0.4);
+}
+
+.cm-keyword,
+.cm-operator {
+    color: #a6d047;
+}
+
+/* eg: functions */
+.cm-variable {
+    color: #ff8a35;
+}
+
+/* eg: normal variables */
+.cm-variable-2 {
+    color: #92c188;
+}
+
+/* eg: css3 selectors */
+.cm-variable-3 {
+    color: #ffd53a;
+}
+
+/* tags & brackets */
+.cm-tag,
+.cm-bracket {
+    color: #FFCD08;
+}
+    /* tags & brackets - matching / non-matching */
+    .CodeMirror-matchingtag,
+    .CodeMirror-matchingbracket {
+        background: none;
+    }
+    .CodeMirror-matchingtag.cm-tag,
+    .CodeMirror-matchingbracket {
+        color: #FFFF26!important;
+        border-bottom: 1px solid;
+    }
+
+/* eg: css classes */
+.cm-qualifier { 
+    color: #c4e287;
+}
+
+/* css property / js method / property */
+.cm-property {
+    color: #c67c50;
+}
+
+.cm-atom { 
+    color: #f4b94a;
+}
+
+.cm-number {
+    color: #FF5C26;
+}
+
+/* eg: at rule in css, variables in js */
+.cm-def { 
+    color: #d6ebac;
+}
+
+.cm-attribute {
+    color: #80d040;
+}
+
+/* eg: predefined functions */
+.cm-builtin {
+    color: #ffaa1e;
+}
+
+/* Markdown */
+.cm-header { 
+    color: #fac05e; 
+    font-size: 1.1em;
+}
+.cm-quote {
+    color: #b6d673;
+}
+.cm-hr {
+    color: #d6a33c;
+}
+
+.cm-link {
+    color: #FF5C26;
+}
+
+
+/* Error */
+.cm-error,
+.CodeMirror-nonmatchingbracket {
+    color: #ff2f2f;
+    border-bottom: 2px solid;
+}

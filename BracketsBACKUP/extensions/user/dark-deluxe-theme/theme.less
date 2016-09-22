@@ -1,0 +1,236 @@
+// COLOR PALETTE
+@background: #0F1319;
+@foreground: #08605F;
+/* BLUES */
+
+@darkblue1: #172030;
+@darkblue2: #131821;
+/* GREENS */
+
+@lightgreen1: #0DAB76;
+@lightgreen2: #114B5F;
+/* GREYS */
+
+@grey1: #28343D;
+@grey2: #777788;
+@grey3: #DDD;
+/* ACCENTS */
+
+@accent1: #BF1B41;
+@accent2: #68327D;
+/*
+
+********************************************
+********************************************
+
+*/
+
+// STYLING
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @grey3;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: @darkblue2;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 #000;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: @grey1;
+    }
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: @grey2;
+}
+
+.cm-attribute,
+.cm-plus {
+    color: @accent2;
+}
+
+.cm-number {
+    color: @accent1;
+}
+
+.cm-def,
+.cm-property {
+    color: @accent2;
+}
+
+.cm-variable,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @grey2;
+}
+
+.cm-variable-2 {
+    color: @grey3;
+}
+
+.cm-variable-3 {
+    color: @accent1;
+}
+
+// VARIABLE COLORS FOR PHP
+.cm-m-clike.cm-variable {
+    color: @grey3;
+}
+
+.cm-m-clike.cm-variable-2 {
+    color: @accent2;
+}
+
+.cm-m-clike.cm-operator {
+    color: @grey2;
+}
+
+.cm-comment {
+    color: @grey1;
+}
+
+.cm-error,
+.cm-minus {
+    color: @accent1;
+}
+
+.cm-header {
+    color: #d85896;
+}
+
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote {
+    color: @lightgreen1;
+}
+
+// EXTRA CSS 
+.CodeMirror-searching {
+    background-color: @lightgreen2;
+    &.searching-current-match {
+        background-color: @lightgreen1;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid #fff !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: @grey1;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: @darkblue1;
+}
+
+.CodeMirror-matchingbracket,
+.CodeMirror-matchingtag {
+    background-color: transparent;
+    border-bottom: 2px solid @accent1;
+}
+
+.CodeMirror-matchingbracket {
+    color: @lightgreen1!important;
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid #fff;
+}
+
+.CodeMirror {
+    .CodeMirror {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-gutters {
+        background: transparent;
+        border-right: none;
+    }
+    .CodeMirror .CodeMirror-activeline-background {
+        background: transparent;
+    }
+    .CodeMirror .CodeMirror-activeline .CodeMirror-gutter-elt {
+        background: transparent;
+        color: @grey1;
+    }
+    .CodeMirror-focused .CodeMirror-activeline-background {
+        background: @darkblue2;
+    }
+    .CodeMirror-focused .CodeMirror-activeline {
+        .CodeMirror-gutter-elt {
+            background: rgba(0, 0, 0, 0.2);
+            color: @grey3;
+        }
+    }
+}
+
+.CodeMirror-foldgutter-open:after {
+    color: @grey1;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    color: @accent2;
+}
+
+.CodeMirror.over-gutter,
+.CodeMirror-activeline {
+    .CodeMirror-foldgutter-open:after {
+        color: @grey1;
+    }
+}
+
+.CodeMirror-foldmarker {
+    border-color: @foreground;
+    color: @grey2;
+    background-color: @background;
+    padding: 0 5px;
+}
+
+// NON-EDITOR STYLING
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @grey2;
+}
+
+.quick-view-highlight {
+    background: @darkblue1;
+}

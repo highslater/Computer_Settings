@@ -1,0 +1,30 @@
+{
+    "name": "brackets-console",
+    "title": "Console",
+    "version": "1.4.1",
+    "description": "Shows console.log & console.error & console.warn without developer tools.",
+    "homepage": "https://github.com/aghiura/brackets-console",
+    "author": {
+        "name": "Alexandru Ghiura",
+        "email": "ghalex@gmail.com",
+        "url": "https://github.com/ghalex/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ghalex/brackets-console.git"
+    },
+    "license": "MIT",
+    "categories":"general",
+    "keywords": [
+        "debug",
+        "console"
+    ],
+    "files": [
+        "html/console.html",
+        "main.js",
+        "README.md"
+    ],
+    "engines": {
+        "brackets": ">=0.22.0"
+    }
+}

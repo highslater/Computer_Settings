@@ -1,0 +1,14 @@
+{
+    "title": "Brackets Very Dark",
+    "name": "jay-theme",
+    "description": "A darker theme for Brackets, as dark as command prompt",
+    "version": "2.0.0",
+    "author": "Jaycee Okeke <okekejay@gmail.com>",
+    "engines": {
+        "brackets": ">=1.0.0"
+    },
+    "theme": {
+        "file": "Jay.less",
+        "dark": true
+    }
+}

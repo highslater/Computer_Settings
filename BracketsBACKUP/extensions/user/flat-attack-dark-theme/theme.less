@@ -1,0 +1,214 @@
+/*
+ * Flat Attack Dark Theme Copyright (c) 2015 Mark Ostrander.
+ *
+ * Liscensed under MIT
+ */
+
+@background: #3A383A;
+@foreground: #ECF0F1;
+@white: #fff;
+@black: #000;
+@gray: #969C9E;
+@string: #DFD7A9;
+@flat_red: #EF5C54;
+@error: #dc322f;
+@flat_green: #2ABB9B;
+@flat_blue: #5FA7CD;
+@matching: #D2D7D3;
+@search: #F4D03F;
+@search_match: #f6a644;
+@cursor: #F62459;
+@white_space: #555555;
+
+/* Code Styling */
+
+.CodeMirror,
+.CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: none;
+    border-top: 1px solid @gray;
+    border-bottom: 1px solid @gray;
+}
+
+.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+    box-shadow: inset 15px 0 0 0 @black;
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: none;
+        color: @flat_blue;
+        border-top: 1px solid @gray;
+        border-bottom: 1px solid @gray;
+    }
+    .inline-widget .CodeMirror-gutter-elt {
+        color: #767676;
+    }
+}
+
+.cm-atom,
+.cm-string,
+.cm-string-2,
+.cm-hr {
+    color: @string;
+}
+
+.cm-number,
+.cm-attribute,
+.cm-plus {
+    color: @flat_red;
+}
+
+.cm-def,
+.cm-property {
+    color: @flat_green;
+}
+
+.cm-variable,
+.cm-variable-2,
+.cm-variable-3,
+.cm-operator,
+.cm-meta,
+.cm-bracket {
+    color: @foreground;
+}
+
+.cm-comment {
+    color: @gray;
+}
+
+.cm-error,
+.cm-minus {
+    color: @error;
+}
+
+.cm-header {
+    color: @flat_blue;
+}
+
+.cm-link {
+    color: #b77fdb;
+    text-decoration: none;
+}
+
+.cm-rangeinfo {
+    color: #6c71c4;
+}
+
+.cm-keyword,
+.cm-qualifier,
+.cm-builtin,
+.cm-tag,
+.cm-quote {
+    color: @flat_blue;
+}
+
+/* Extra CSS */
+
+.CodeMirror-searching {
+    background-color: @search;
+    &.searching-current-match {
+        background-color: @search_match;
+    }
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid @cursor !important;
+}
+
+.CodeMirror-gutters {
+    background-color: @background;
+    border-right: none;
+}
+
+.CodeMirror-linenumber {
+    color: @white;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: #333f48;
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+    background: #34495e;
+}
+
+.CodeMirror-matchingbracket {
+    background-color: rgba(150,156,158, 0.4);
+    color: @white !important;
+}
+
+.CodeMirror-matchingtag {
+    /* Ensure visibility against gray inline editor background */
+    background-color: rgba(150,156,158, 0.4);
+}
+
+.CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid @white;
+}
+
+/* Non-editor styling */
+.image-view,
+.not-editor {
+    background-color: @background;
+}
+
+.view-pane .image-view {
+    color: @foreground;
+}
+
+/**
+ * Extensions
+ * ==========
+ */
+
+/* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)*/
+.CodeMirror .cm-dk-whitespace-space::before,
+.CodeMirror .cm-dk-whitespace-tab::before,
+.CodeMirror .cm-dk-whitespace-leading-space::before,
+.CodeMirror .cm-dk-whitespace-leading-tab::before,
+.CodeMirror .cm-dk-whitespace-trailing-space::before,
+.CodeMirror .cm-dk-whitespace-trailing-tab::before {
+    background-color: @white_space !important;
+}
+
+/* Code Folding (https://github.com/thehogfather/brackets-code-folding)*/
+.CodeMirror-foldgutter-open:after {
+    content: "\25BD";
+    font-size: 1.5em;
+    color: @gray;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "\25B7";
+    background-color: transparent !important;
+    font-size: 1.5em;
+    color: @search !important;
+}
+
+.CodeMirror-foldgutter-folded {
+    padding: 0;
+}
+
+.CodeMirror-foldgutter-open {
+    padding-top: 1px;
+}
+
+.CodeMirror-foldmarker {
+    display: inline-block;
+    border-radius: 0.25em;
+    padding: 0 2px;
+    border: 0px;
+    font-size: .7em;
+    color: #2C3E50 !important;
+    background-color: @foreground;
+    &::after {
+        content: '\2022\2022\2022';
+        position: relative;
+    }
+}

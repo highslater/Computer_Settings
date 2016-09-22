@@ -1,0 +1,128 @@
+<div id="georapbox-angular-snippets-panel" class="bottom-panel vert-resizable top-resizer">
+    <header class="toolbar simple-toolbar-layout">
+        <div id="georapbox-angular-snippets-panel-header"></div>
+        
+        <button class="close">&times;</button>
+    </header>
+    
+    <article class="resizable-content">
+        <h2>Snippets List</h2>
+        
+        <ul>
+            <li>
+                <strong>ngmodule =></strong>
+<pre>angular.module('{name}', []).</pre>
+            </li>
+            
+            <li>
+                <strong>ngconfig =></strong>
+<pre>config([function () {
+
+}])</pre>
+            </li>
+            
+            <li>
+                <strong>ngconfig[$routeProvider]</strong>
+            </li>
+<pre>config(['$routeProvider', function ($routeProvider) {
+	$routeProvider.when('/{route}', {
+		templateUrl: '{name}.html',
+		controller: '{Name}'
+	}).otherwise({ redirectTo: '/{route}' });
+}])</pre>
+           
+           <li><strong>ngwhen</strong></li>
+<pre>when('/{route}', {
+	templateUrl: '{name}.html',
+	controller: '{Name}'
+})</pre>
+   
+           <li><strong>ngotherwise</strong></li>
+<pre>otherwise({ redirectTo: '/{route}' })</pre>
+   
+           <li><strong>ngrun</strong></li>
+<pre>run([function () {
+
+}])</pre>
+    
+            <li>
+                <strong>ngcontroller =></strong>
+<pre>controller('{Name}', ['$scope', function ($scope) {
+
+}])</pre>
+            </li>
+            
+            <li>
+                <strong>ngservice =></strong>
+<pre>service('{name}', [function () {
+
+}])</pre>
+            </li>
+            
+            <li>
+                <strong>ngfactory =></strong>
+<pre>factory('{name}', [function () {
+	return {
+
+	};
+}])</pre>
+            </li>
+            
+            <li>
+                <strong>ngdirective =></strong>
+<pre>directive('{name}', [function () {
+	return {
+		restrict: '{A}',
+		link: function (scope, element, attrs) {
+
+		}
+	};
+}])</pre>
+            </li>
+        </ul>
+        
+        <h2>Directive options list</h2>
+        <ul>
+            <li>scope</li>
+            <li>template</li>
+            <li>templateUrl</li>
+            <li>transclude</li>
+        </ul>
+        <p><strong>NOTE:</strong> Options are sperated by commas (,) <strong>without spaces</strong>.</p>
+        <p>Example:</p>
+        <p><code>ngdirective[scope,template,transclude]</code> will create snippet:</p>
+<pre>directive('{name}', [function () {
+	return {
+		restrict: '{A}',
+		scope: {},
+		template: '',
+		transclude: true,
+		link: function (scope, element, attrs) {
+
+		}
+	};
+}])</pre>
+   
+    <h2>Snippets combinations</h2>
+    <p>You can combine snippets together like this:</p>
+    <p><code>ngmodule.ngconfig[$routeProvider].ngcontroller.ngdirective[scope,template].ngfactory</code> will create snippet:</p>
+<pre>angular.module('{name}', []).controller('{Name}', ['$scope', function ($scope) {
+
+}]).directive('{name}', [function () {
+	return {
+		restrict: '{A}',
+		scope: {},
+		template: '',
+		link: function (scope, element, attrs) {
+
+		}
+	};
+}]).factory('{name}', [function () {
+	return {
+
+	};
+}]);</pre>
+   
+        <div class="footer-spacer"></div>
+    </article>
+</div>

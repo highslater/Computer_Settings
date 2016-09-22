@@ -1,0 +1,17 @@
+{
+    "name": "brackets-fonts",
+    "title": "Fonts",
+    "description": "The extension allows you to change the font of the editor by choosing from a selection of fonts from Google Fonts.",
+    "homepage": "https://github.com/tirithen/brackets-fonts",
+    "version": "0.0.2",
+    "license": "MIT",
+    "author": "tirithen",
+    "files": [
+        "main.js"
+    ],
+    "categories": "visual",
+    "keywords": [
+        "font",
+        "visual"
+    ]
+}
