@@ -1,0 +1,64 @@
+{
+    "Seti_ClosedFolder_same": true,
+    "Seti_bold_heading": true,
+    "Seti_bold_slctdfile_labels": true,
+    "Seti_bold_slctdtab_labels": true,
+    "Seti_heading_font_12": false,
+    "Seti_no_blue_bar": true,
+    "Seti_orange_button": true,
+    "Seti_sb_small_padding": true,
+    "Seti_show_group_arrows": true,
+    "Seti_sidebar_font_size_12": true,
+    "Seti_tabs_no_min_width": true,
+    "Seti_tabs_small": true,
+    "auto_complete_triggers":
+    [
+        {
+            "characters": "<",
+            "selector": "text.html"
+        },
+        {
+            "characters": ".",
+            "selector": "source.js"
+        }
+    ],
+    "bold_folder_labels": false,
+    "caret_style": "phase",
+    "color_scheme": "Packages/User/1myCustomDarkTheme (Flake8Lint).tmTheme",
+    "detect_indentation": true,
+    "font_face": "Source Code Pro",
+    "font_size": 10,
+    "fonts_list":
+    [
+        "Andale Mono",
+        "Source Code Pro",
+        "Courier",
+        "Courier New",
+        "Inconsolata",
+        "Ubuntu Mono",
+        "M+1M",
+        "M+2M"
+    ],
+    "gutter": true,
+    "highlight_line": false,
+    "highlight_modified_tabs": false,
+    "ignored_packages":
+    [
+        "MagicPython",
+        "Vintage"
+    ],
+    "line_numbers": true,
+    "line_padding_bottom": 0,
+    "line_padding_top": 0,
+    "margin": 0,
+    "overlay_scroll_bars": "enabled",
+    "preview_on_click": true,
+    "rulers":
+    [
+        78
+    ],
+    "shift_tab_unindent": true,
+    "tab_size": 4,
+    "theme": "Seti_orig.sublime-theme",
+    "translate_tabs_to_spaces": true
+}
