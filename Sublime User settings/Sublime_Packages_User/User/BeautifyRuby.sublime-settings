@@ -1,0 +1,11 @@
+{
+    // Would you prefer a tab or two spaces to represent a tab
+    // The default is two spaces represented by 'space'
+    // anything else will use one tab character
+    "file_patterns": ["\\.html\\.erb", "\\.rb", "\\.rake", "Rakefile", "Gemfile", "Vagrantfile"],
+    "html_erb_patterns": ["\\.html\\.erb"],
+    "run_on_save": true,
+    "save_on_beautify": true,
+    "ruby": "/home/highslater/.rbenv/shims/ruby"
+    // "ruby": "~/.rvm/bin/rvm-auto-ruby"
+}

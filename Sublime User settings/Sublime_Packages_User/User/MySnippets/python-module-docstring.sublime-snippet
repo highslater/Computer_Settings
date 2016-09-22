@@ -1,0 +1,24 @@
+<snippet>
+    <content><![CDATA[
+"""Demonstrate high quality docstrings.
+
+Module-level docstrings appear as the first "statement" in a module. Remember,
+that while strings are regular Python statements, comments are not, so an
+inline comment may precede the module-level docstring.
+
+After importing a module, you can access this special string object through the
+``__doc__`` attribute; yes, it's actually available as a runtime attribute,
+despite not being given an explicit name! The ``__doc__`` attribute is also
+what is rendered when you call ``help()`` on a module, or really any other
+object in Python.
+
+You can also document a package using the module-level docstring in the
+package's ``__init__.py`` file.
+
+"""
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>PmoduleDoc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

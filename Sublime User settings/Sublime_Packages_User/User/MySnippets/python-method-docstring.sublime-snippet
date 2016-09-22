@@ -1,0 +1,20 @@
+<snippet>
+    <content><![CDATA[
+"""Illustrate method-level docstring.
+
+        All public callables should have docstrings, including magic methods
+        like ``__init__()``.
+
+        You'll notice that all these docstrings are wrapped in triple double
+        quotes, as opposed to just "double quotes", 'single quotes', or
+        '''triple single quotes.''' This is a convention for consistency and
+        readability. However, there are two edge cases worth knowing about
+        which I'll illustrate in just a moment.
+
+        """
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>PmethodDoc</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,5 @@
+{
+    "cmd": ["/home/highslater/.rvm/rubies/ruby-2.2.1/bin/ruby", "$file"],
+    "file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+    "selector": "source.ruby"
+}

@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+<div class="well well-lg"> Large Well
+<div class="well well-sm">Small Well</div>
+</div>
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>BWELL</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
